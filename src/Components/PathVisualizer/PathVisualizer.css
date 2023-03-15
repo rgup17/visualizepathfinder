@@ -1,0 +1,115 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-blue: hsl(227, 100%, 56%);
+  --clr-neon-red: hsl(0, 100%, 60%);
+  --clr-neon-green: hsl(130, 80%, 42%);
+
+}
+
+
+.grid {
+
+  /* z-index: 100;
+  margin-left: 150px; */
+  margin: 80px;
+  margin-left: 200px;
+  background-color: antiquewhite;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-width: 30px;
+  border: var(--clr-neon) 4px solid;
+  box-shadow: 0 0 0 1em 0 var(--clr-neon);
+  }
+
+.handleButtonBFS {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+
+  
+  }
+
+.handleButtonDijkstra {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 18.2%;
+  font-size: 20px;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+
+}
+
+
+
+.handleButtonDFS {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+
+}
+
+.handleButtonRecDivMaze {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--clr-neon-green);
+  border: var(--clr-neon-green) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+
+}
+
+
+
+
+/* change color of the clear buttons to maybe blue*/
+.clearPath {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--clr-neon-blue);
+  border: var(--clr-neon-blue) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+}
+
+.clearGrid {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: var(--clr-neon-blue);
+  border: var(--clr-neon-blue) 4px solid;
+  text-shadow: 0 0 0.6em currentColor;
+  cursor: pointer;
+}

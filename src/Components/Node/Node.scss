@@ -1,0 +1,148 @@
+$mobile: 320px;
+$tablet: 481px;
+$laptop: 769px;
+
+
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+
+}
+
+.node {
+  @media only screen and (min-width: $mobile) {
+    width: 8px;
+    height: 20px;
+  }
+  @media only screen and (min-width: $tablet) {
+    width: 17px;
+    height: 17px;
+  }
+  @media only screen and (min-width: $laptop) {
+    width: 28px;
+    height: 28px;
+  }
+  display: inline-block;
+  margin-bottom: -4px;
+  box-sizing: border-box;
+  outline: 1px solid black;
+}
+
+
+.node-start {
+    background-color: green;
+    /*background: url("../../images/x-wing.png");
+    background-size: cover;*/
+}
+
+.node-finish {
+    background-color: red;
+    /*background: url("../../images/death-star.png");
+    background-size: cover;*/
+}
+
+.node-wall {
+    background-color: black;
+    /*background: url("../../images/tie-fighter-1.png");
+    background: url("../../images/asteroid.jfif");
+    background-size: cover;*/
+}
+
+.node-animated-wall {
+    animation-name: wallAnimation;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.4);
+    background-color: rgb(2, 36, 51);
+    border-radius: 30%;
+  }
+
+  50% {
+    transform: scale(0.6);
+    background-color: rgb(2, 36, 51);
+    border-radius: 20%;
+  }
+
+  75% {
+    transform: scale(0.8);
+    background-color: rgb(2, 36, 51);
+    border-radius: 10%;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(2, 36, 51);
+    border: 1px solid rgb(2, 36, 51);
+  }
+}
+
+// animation credits - Clement' original project
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(0, 217, 159, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(250, 181, 92);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 177, 59);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: var(--clr-neon);
+  }
+}
